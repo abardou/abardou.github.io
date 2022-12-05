@@ -10,6 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   address: >
     <p>Office M7.1H31</p>
+    <p>École Normale Supérieure de Lyon</p>
     <p>46 Allée d'Italie</p>
     <p>69007, Lyon, France</p>
 
