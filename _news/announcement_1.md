@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-09-01 08:00:00
 inline: true
 ---
 
-A simple inline announcement.
+I am currently at EPFL (Lausanne, CH), visiting for 3-months to work with Patrick Thiran! :smile:

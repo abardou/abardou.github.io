@@ -3,81 +3,51 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+@inproceedings{inspire,
+  abbr            = {MSWiM},
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Begin, Thomas},
+  booktitle       = {MSWiM '22: Int'l ACM Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems},
+  editor          = {ACM},
+  title           = {INSPIRE: Distributed Bayesian Optimization for ImproviNg SPatIal REuse in Dense WLANs},
+  year            = {2022},
+  bp              = {},
+  abstract        = {WLANs, which have overtaken wired networks to become the primary means of connecting devices to the Internet, are prone to performance issues due to the scarcity of space in the radio spectrum. As a response, IEEE 802.11ax and subsequent amendments aim at increasing the spatial reuse of a radio channel by allowing the dynamic update of two key parameters in wireless transmission: the transmission power (TX_POWER) and the sensitivity threshold (OBSS_PD). In this paper, we present INSPIRE, a distributed online learning solution performing local Bayesian optimizations based on Gaussian processes to improve the spatial reuse in WLANs. INSPIRE makes no explicit assumptions about the topology of WLANs and favors altruistic behaviors of the access points, leading them to find adequate configurations of their TX_POWER and OBSS_PD parameters for the "greater good" of the WLANs. We demonstrate the superiority of INSPIRE over other state-of-the-art strategies using the ns-3 simulator and two examples inspired by real-life deployments of dense WLANs. Our results show that, in only a few seconds, INSPIRE is able to drastically increase the quality of service of operational WLANs by improving their fairness and throughput.},
+  selected        = {true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{mswim21,
+  abbr            = {MSWiM},
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Begin, Thomas and Busson, Anthony},
+  booktitle       = {MSWiM '21: Int'l ACM Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems},
+  editor          = {ACM},
+  title           = {Improving the Spatial Reuse in IEEE 802.11ax WLANs: A Multi-Armed Bandit Approach},
+  year            = {2021},
+  abstract        = {The latest amendment 802.11ax to the IEEE 802.11 standard, better known by its commercial name Wi-Fi 6, includes a feature that aims at improving the spatial reuse of a channel: each device can adapt its Clear Channel Assessment sensitivity threshold and its transmission power. In this paper, we use the Multi-Armed Bandit (MAB) framework to propose a centralized solution to dynamically adapt these parameters. We propose a new approach based on a Gaussian mixture to sample new network configurations, a specific reward function that prevents starvations when maximized, as well as a method based on Thompson Sampling to select the best network configuration. We evaluate our solution using the network simulator ns-3 and different topologies. Simulation results confirm the large benefits that 802.11ax may bring to spatial reuse. They also demonstrate the efficiency of our solution in finding appropriate parameter configurations that significantly improve the quality of service of the networks.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  selected={true}
+@article{extension_gaussian,
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Begin, Thomas and Busson, Anthony},
+  journal         = {Computer Communications},
+  number          = {},
+  abbr            = {COMCOM},
+  title           = {Analysis of a Multi-Armed Bandit solution to improve the spatial reuse of next-generation WLANs},
+  volume          = {193},
+  pages           = {279-292},
+  abstract        = {The next generation of WLANs will be, for the most part, ubiquitous in urban areas, densely deployed, and implementing the latest amendment of IEEE 802.11 standard, namely 802.11ax also known as Wi-Fi 6. Among the main purposes of 802.11ax is the improvement of the spatial reuse of radio channels by allowing the dynamical update of the sensitivity threshold and the transmission power at each node. In this regard, our contributions are twofold. First, we investigate the performance improvement resulting from a more efficient spatial reuse of radio channels with 802.11ax. Second, we introduce a centralized solution based on the Multi-Armed Bandit (MAB) framework and a sub-sampling technique to quickly discover an appropriate configuration of the sensitivity threshold and transmission power at each access point. We evaluate our solution with the network simulator ns-3 on different network topologies. The simulation results show the ability of our solution to quickly and robustly adjust these parameters of access points in order to significantly improve the behavior of WLANs.},
+  year            = {2022}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{adhoc,
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Begin, Thomas and Busson, Anthony},
+  journal         = {Ad Hoc Networks},
+  number          = {},
+  abbr            = {ADHOC},
+  title           = {Mitigating starvation in dense WLANs: A multi-armed Bandit Solution},
+  volume          = {138},
+  year            = {2023},
+  abstract        = {With the recent 802.11ax amendment to the IEEE standard commercialized as Wi-Fi 6, WLANs have the potential to greatly improve the spatial reuse of radio channels. This resorts to the new ability for APs (Access Points) to dynamically modify their transmission power as well as the signal energy threshold beyond which they consider the radio channel to be free or busy. In general, selecting adequate values for these parameters is complex because of (i) the high dimensionality of the problem and (ii) the uncertainty of the radio environment. To overcome these difficulties, we frame this problem as a MAB (Multi-Armed Bandit) problem and propose an efficient and robust solution using Thompson sampling, an original sampling of WLAN configurations, and a tailor-made reward function. We evaluate the efficiency of our solution as well as several other ones with scenarios inspired by real-life WLANs' deployments using the network simulator ns-3. The numerical results show the ability of our solution along with its superiority over the others at finding adequate parameterization at each AP thereby significantly improving the overall performance of WLANs.}
 }
