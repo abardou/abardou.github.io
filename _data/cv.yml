@@ -65,15 +65,12 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Optimization
+    - title: Black-Box Optimization
       items:
-        - Bayesian
-        - Decentralized
-    - title: Sequential Learning
-      items:
-        - Online Learning
+        - Bayesian Optimization
         - Multi-Armed Bandit
-    - title: Wireless Networks.
+        - Online Learning
+    - title: Wireless Networks
       items:
         - Wi-Fi 6+
         - 5G+
