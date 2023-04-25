@@ -21,6 +21,6 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Ph.D. student at École Normale Supérieure de Lyon, in the HoWNet team (previously INRIA DANTE) under the supervision of Prof. Thomas Begin.
 
-I am working on online high-dimensional black-box optimization techniques, with an extensive application to next generation wireless networks (<em>e.g.</em> Wi-Fi, 5G).
+I am researching online high-dimensional black-box optimization techniques, with an extensive application to next generation wireless networks (<em>e.g.</em> Wi-Fi, 5G).
 
 My research interests include black-box optimization (especially Bayesian optimization), online learning, performance evaluation and wireless networks.
