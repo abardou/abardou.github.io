@@ -48,6 +48,18 @@
   abstract        = {The latest amendment 802.11ax to the IEEE 802.11 standard, better known by its commercial name Wi-Fi 6, includes a feature that aims at improving the spatial reuse of a channel: each device can adapt its Clear Channel Assessment sensitivity threshold and its transmission power. In this paper, we use the Multi-Armed Bandit (MAB) framework to propose a centralized solution to dynamically adapt these parameters. We propose a new approach based on a Gaussian mixture to sample new network configurations, a specific reward function that prevents starvations when maximized, as well as a method based on Thompson Sampling to select the best network configuration. We evaluate our solution using the network simulator ns-3 and different topologies. Simulation results confirm the large benefits that 802.11ax may bring to spatial reuse. They also demonstrate the efficiency of our solution in finding appropriate parameter configurations that significantly improve the quality of service of the networks.}
 }
 
+@article{extension_inspire,
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Begin, Thomas},
+  journal         = {Computer Communications},
+  number          = {},
+  abbr            = {COMCOM},
+  title           = {Analysis of a decentralized Bayesian optimization algorithm for improving spatial reuse in dense WLANs},
+  pdf             = {ComCom23_revised.pdf},
+  abstract        = {Despite representing the prominent means of accessing the Internet, WLANs remain subject to performance issues, which may be mitigated through more efficient spatial reuse of radio channels. In this perspective, the IEEE 802.11ax amendment enables the dynamic update of two key parameters in wireless transmission: the transmission power (TX_POWER) and the sensitivity threshold (OBSS_PD). In this paper, we present INSPIRE, a distributed online learning solution performing local Bayesian optimizations based on Gaussian processes to improve spatial reuse in WLANs. INSPIRE makes no explicit assumptions on the WLANs' topology and favors altruistic behaviors of the access points in their search for adequate configurations of their TX_POWER and OBSS_PD parameters. INSPIRE can easily be extended to work with a limited number of observations to throttle its computational complexity. We demonstrate the superiority of INSPIRE over other state-of-the-art strategies using the ns-3 simulator and two examples inspired by real-life deployments of dense WLANs. Our results show that, in only a few seconds, INSPIRE is able to drastically increase the quality of service of operational WLANs by improving their fairness and throughput. Finally, we discuss the configurations recommended by INSPIRE. We show that they comply with an 802.11ax empirical recommendation, and we correlate their values with some graph-based metrics of the WLAN topologies.},
+  year            = {2023}
+}
+
 @article{extension_gaussian,
   bibtex_show     = {true},
   author          = {Bardou, Anthony and Begin, Thomas and Busson, Anthony},
