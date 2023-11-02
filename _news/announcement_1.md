@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-09-01 08:00:00
+date: 2022-10-27 19:00:00
 inline: true
 ---
 
-I am currently at EPFL (Lausanne, CH), visiting for 3-months to work with Patrick Thiran! :smile:
+With my PhD advisor, we received the Best Paper Award @ MSWiM'22! 🎉

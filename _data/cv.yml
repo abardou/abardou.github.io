@@ -13,10 +13,10 @@
   contents:
     - title: PhD
       institution: École Normale Supérieure de Lyon, Lyon, FR
-      year: 2020 - 
+      year: 2020 - 2023
       description:
-        - Online Learning Techniques for the Improvement of WLANs and Beyond.
-        - Under the supervision of Thomas Begin, within the HoWNet (prev. Inria DANTE) team, at the LIP laboratory
+        - Online Learning for the Black-Box Optimization of Wireless Networks.
+        - Under the supervision of Thomas Begin, within the HoWNet team, at the LIP laboratory
         - Funded by the Excellence Laboratory LabEx MILyon.
     - title: Master of Science
       institution: Université Claude Bernard Lyon I
@@ -34,6 +34,11 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: INDY Lab, EPFL
+      year: 2023 -
+      description:
+        - Worked in collaboration with Patrick Thiran.
     - title: Visiting Doctoral Student
       institution: INDY Lab, EPFL
       year: 2022
