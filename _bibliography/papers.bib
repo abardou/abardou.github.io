@@ -3,6 +3,30 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{dumbo,
+  abbr            = {ICLR},
+  bibtex_show     = {true},
+  author          = {Bardou, Anthony and Thiran, Patrick and Begin, Thomas},
+  booktitle       = {ICLR '24: Int'l Conference on Learning Representations},
+  title           = {Relaxing the Additivity Constraints in Decentralized No-Regret High-Dimensional Bayesian Optimization},
+  year            = {2024},
+  pdf             = {ICLR24_CamReady.pdf},
+  abstract        = {Bayesian Optimization (BO) is typically used to optimize an unknown function $f$ that is noisy and costly to evaluate, by exploiting an acquisition function that must be maximized at each optimization step. Even if provably asymptotically optimal BO algorithms are efficient at optimizing low-dimensional functions, scaling them to high-dimensional spaces remains an open problem, often tackled by assuming an additive structure for $f$. By doing so, BO algorithms typically introduce additional restrictive assumptions on the additive structure that reduce their applicability domain. This paper contains two main contributions: (i) we relax the restrictive assumptions on the additive structure of $f$ \textit{without} weakening the maximization guarantees of the acquisition function, and (ii) we address the over-exploration problem for decentralized BO algorithms. To these ends, we propose DuMBO, an asymptotically optimal decentralized BO algorithm that achieves very competitive performance against state-of-the-art BO algorithms, especially when the additive structure of $f$ comprises high-dimensional factors.},
+  selected        = {true}
+}
+
+@article{ns-ndt,
+  bibtex_show     = {true},
+  author          = {Si-Mohammed, Samir and Bardou, Anthony and Begin, Thomas and Lassous, Isabelle Gu{\'e}rin and Vicat-Blanc, Pascale},
+  journal         = {Future Generation Computer Systems},
+  number          = {},
+  abbr            = {FGCS},
+  title           = {NS+NDT: Smart Integration of Network Simulation in Network Digital Twin, Application to IoT Networks},
+  pdf             = {FGCS_2023.pdf},
+  abstract        = {Network Digital Twin (NDT) and Network Simulation (NS) are two paradigms leveraging virtual representations of networks to help decision-making. These tools may seem similar or interchangeable and are often confused or opposed. However, they have their respective purposes, use cases and underlying concepts, which differ and are complementary. The goal of this article is to explore and clarify the specificity, the benefits and the limits of these two decision support tools, analyze how they complement each other and can be nicely combined. We argue that a smart integration of NS in NDT, named NS+NDT, can ease, accelerate and strength decisions for network design, deployment, operations, management and evolution. To study and demonstrate this claim, we focus on the domain of Internet of Things (IoT) solutions, where wireless networks are critical for connecting the physical assets to the Internet, but are complicated to configure for meeting the requirements of a specific application. We examine how NS, coupled with NDT, can contribute to support IoT architects and operators decisions throughout the life cycle of an IoT network. We analyse the different steps required to use NS in the context of NDT and examine how this helps remove NS barriers such as credibility and reliability. In particular, we show how NDT data enable to fine tune and customize the energy consumption models, making the simulation results more context-aware and insightful. Then, addressing the often-prohibitive simulation cost for exploring a large parameter space, we propose to associate surrogate modeling to NS+NDT. As surrogate models, we first introduce a simple ML (Machine Learning)-based surrogate model and illustrate this method with two IoT network configuration optimization use cases. Secondly, we propose a Bayesian optimization approach based on Gaussian Processes as surrogate model to further accelerate the (re)configuration decisions. We show how this method enables to select simulation scenarios that converge rapidly to the optimal solution, and allows the NDT to timely perform the adaptation. The contribution of this article is threefold. It provides i) the first systematic analysis of the differences and potential synergies between NDT and NS; ii) a synthetic presentation of the integration of NS and associated decision algorithms within a NDT to unlock NS accessibility and credibility throughout the life cycle of an IoT solution; iii) a proposal for a smart and cost-efficient integration of NS in NDT via surrogate modeling, for reducing evaluation and optimization cost, paving the way to NS-augmented NDT-based dynamic adaptation and real-time optimization of IoT networks.},
+  year            = {2024}
+}
+
 @phdthesis{phd,
   bibtex_show     = {true},
   TITLE = {{Online Learning for the Black-Box Optimization of Wireless Networks}},
@@ -20,24 +44,6 @@
   HAL_VERSION = {v2},
 }
 
-@article{dumbo,
-  abbr            = {Preprint},
-  bibtex_show     = {true},
-  author          = {Bardou, Anthony and Thiran, Patrick and Begin, Thomas},
-  journal         = {CoRR},
-  volume          = {abs/2305.19838},
-  year            = {2023},
-  url             = {https://doi.org/10.48550/arXiv.2305.19838},
-  doi             = {10.48550/arXiv.2305.19838},
-  eprinttype      = {arXiv},
-  eprint          = {2305.19838},
-  biburl          = {https://dblp.org/rec/journals/corr/abs-2305-19838.bib},
-  bibsource       = {dblp computer science bibliography, https://dblp.org},
-  title           = {Relaxing the Additivity Constraints in Decentralized No-Regret High-Dimensional Bayesian Optimization},
-  pdf             = {Preprint_DuMBO.pdf},
-  abstract        = {Bayesian Optimization (BO) is typically used to optimize an unknown function $f$ that is noisy and costly to evaluate, by exploiting an acquisition function that must be maximized at each optimization step. Although provably asymptotically optimal BO algorithms are efficient at optimizing low-dimensional functions, scaling them to high-dimensional spaces remains an open research problem, often tackled by assuming an additive structure for $f$. However, such algorithms introduce additional restrictive assumptions on the additive structure that reduce their applicability domain. In this paper, we relax the restrictive assumptions on the additive structure of $f$, at the expense of weakening the maximization guarantees of the acquisition function, and we address the over-exploration problem for decentralized BO algorithms. To these ends, we propose DumBO, an asymptotically optimal decentralized BO algorithm that achieves very competitive performance against state-of-the-art BO algorithms, especially when the additive structure of $f$ does not exist or comprises high-dimensional factors.},
-  selected        = {true}
-}
 
 @inproceedings{inspire,
   abbr            = {MSWiM},
