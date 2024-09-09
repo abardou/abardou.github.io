@@ -7,6 +7,12 @@ nav: true
 nav_order: 5
 ---
 
+### EPFL
+
+#### Fall 2024
+
+* **Stochastic Modeling for Telecommunications**, 30h, Bachelor (3rd Year), Teaching Assistant supervised by Patrick Thiran.
+
 ### École Normale Supérieure de Lyon
 
 #### Spring 2023
