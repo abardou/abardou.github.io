@@ -9,6 +9,10 @@ nav_order: 5
 
 ### EPFL
 
+#### Fall 2025
+
+* **Stochastic Modeling for Telecommunications**, 30h, Bachelor (3rd Year), Teaching Assistant supervised by Patrick Thiran.
+
 #### Fall 2024
 
 * **Stochastic Modeling for Telecommunications**, 30h, Bachelor (3rd Year), Teaching Assistant supervised by Patrick Thiran.

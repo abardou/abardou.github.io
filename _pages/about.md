@@ -23,3 +23,5 @@ I am a postdoctoral research at <a href='https://www.epfl.ch/en/'>EPFL</a>, with
 Formerly, I was a Ph.D. student at <a href='https://www.ens-lyon.fr/'>École Normale Supérieure (ENS) Lyon</a>, within the <a href='https://www.ens-lyon.fr/LIP/index.php/research/hownet-team'>HoWNet team</a> under the supervision of <a href='https://perso.ens-lyon.fr/thomas.begin/'>Prof. Thomas Begin</a>. I was researching online high-dimensional black-box optimization techniques, with an extensive application to next generation wireless networks (<em>e.g.</em> Wi-Fi, 5G).
 
 My research interests include black-box optimization (especially Bayesian optimization), online learning, performance evaluation and wireless networks.
+
+<b>Since January 2026, I am on the job market. If interested, feel free to drop me an e-mail!</b>
