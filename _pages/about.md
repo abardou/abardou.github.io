@@ -24,4 +24,4 @@ Formerly, I was a Ph.D. student at <a href='https://www.ens-lyon.fr/'>École Nor
 
 My research interests include black-box optimization (especially Bayesian optimization), online learning, performance evaluation and wireless networks.
 
-<b>Since January 2026, I am on the job market. If interested, feel free to drop me an e-mail!</b>
+<b>I am on the job market! If interested, feel free to drop me an e-mail!</b>
