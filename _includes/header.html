@@ -78,14 +78,14 @@
                   {%- if child.title == 'divider' %}
                   <div class="dropdown-divider"></div>
                   {%- else %}
-                  <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
+                  <a class="dropdown-item" href="{%- if child.cv_pdf -%}{{ child.cv_pdf | prepend: 'assets/pdf/' | relative_url }}{%- else -%}{{ child.permalink | relative_url }}{%- endif -%}" {%- if child.cv_pdf -%}target="_blank" rel="noopener noreferrer"{%- endif -%}>{{ child.title }}</a>
                   {%- endif -%}
                   {% endfor %}
                 </div>
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{%- if p.cv_pdf -%}{{ p.cv_pdf | prepend: 'assets/pdf/' | relative_url }}{%- else -%}{{ p.url | relative_url }}{%- endif -%}" {%- if p.cv_pdf -%}target="_blank" rel="noopener noreferrer"{%- endif -%}>{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
