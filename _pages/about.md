@@ -4,24 +4,76 @@ title: about
 permalink: /
 subtitle: Postdoctoral Researcher @ <a href='https://www.epfl.ch/en/'>EPFL</a>, <a href='https://indy.epfl.ch/'>INDY Lab</a>.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  address: >
-    <p>Office INF013</p>
-    <p>Swiss Federal Institute of Technology (EPFL)</p>
-    <p>1673, Ecublens, Switzerland</p>
+profile: false
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral researcher at <a href='https://www.epfl.ch/en/'>EPFL</a>, within the <a href='https://indy.epfl.ch/'>INDY Lab</a>, working in collaboration with <a href='https://people.epfl.ch/patrick.thiran'>Prof. Patrick Thiran</a>. My research lies at the intersection of experimental design, stochastic modeling, online learning, and derivative-free, uncertainty-aware optimization. Broadly speaking, I am interested in developing adaptive algorithms that efficiently acquire information and make decisions in uncertain, complex, and evolving environments. This work spans both fundamental questions (such as statistical efficiency, exploration strategies, and performance guarantees) and applications to real-world problems, mostly in wireless networks, embedded systems, and network science.
+<div class="about-hero">
+  <!-- <div class="about-hero-badge">Research highlight</div> -->
+  <h1 class="about-hero-title">Optimization under <span class="hero-term hero-uncertainty">uncertainty</span>, <span class="hero-term hero-dynamics">dynamics</span> and <span class="hero-term hero-structure">structure</span></h1>
+  <p class="about-hero-subtitle">I build algorithms that allow intelligent systems to learn from limited data, to make robust decisions over time, and to thrive in complex networks and embedded environments.</p>
+</div>
 
-Prior to joining EPFL, I obtained my Ph.D. from <a href='https://www.ens-lyon.fr/'>École Normale Supérieure (ENS) Lyon</a>, where I was a member of the <a href='https://www.ens-lyon.fr/LIP/index.php/research/hownet-team'>HoWNet team</a> under the supervision of <a href='https://perso.ens-lyon.fr/thomas.begin/'>Prof. Thomas Begin</a>. My doctoral research focused on high-dimensional black-box decision-making and online learning methods, with a particular emphasis on the autonomous management of next-generation wireless networks (particularly Wi-Fi and 5G networks). Through this work, I developed scalable approaches capable of operating under severe uncertainty while continuously adapting to changing conditions.
+<div class="about-showcase">
+  <div class="about-card about-card-featured">
+    <h3>Built for real systems</h3>
+    <p>Optimization is most impactful when it leaves the benchmark and meets the real world. My research develops algorithms for complex, distributed, and resource-constrained systems, with applications ranging from wireless networks to autonomous aerial robotics.</p>
+    <video controls preload="metadata" playsinline>
+      <source src="/assets/vid/drone_gp.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="about-right">
+    <div class="about-card">
+      <h3>Gray-Box Optimization</h3>
+      <p>Real-world problems are rarely unstructured. By incorporating symmetries, invariances, and domain knowledge into versatile optimization frameworks, I develop algorithms that learn more efficiently.</p>
+      <video controls preload="metadata" playsinline>
+        <source src="/assets/vid/rotation_invariant_gp.mp4" type="video/mp4">
+      </video>
+      <!-- <div class="card-gallery">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Optimization landscape" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop" alt="Network topology" class="gallery-img">
+      </div> -->
+    </div>
+    <div class="about-card">
+      <h3>Adapting to Change</h3>
+      <p>Many optimization problems evolve over time, requiring algorithms that can continuously adapt as objectives and environments change. I develop optimization methods that remain sample-efficient and reliable in dynamic settings.</p>
+      <video controls preload="metadata" playsinline>
+        <source src="/assets/vid/PermSix-Hump_Camel_25.0_240.mp4" type="video/mp4">
+      </video>
+      <!-- <div class="card-gallery">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=200&fit=crop" alt="Real-time adaptation" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1518611505868-d7f6b3b2c5b4?w=300&h=200&fit=crop" alt="Performance metrics" class="gallery-img">
+      </div> -->
+    </div>
+  </div>
+</div>
 
-More generally, my research is motivated by a simple question: how can intelligent systems learn efficiently from limited observations and improve their decisions over time? Answering this question requires combining ideas from machine learning, statistics, and optimization, while maintaining a strong connection to practical challenges in modern complex systems.
+<div class="about-body">
+  <div class="about-story">
+    <div class="about-story-image">
+      <img src="/assets/img/prof_pic.jpg" alt="Antoine Bardou">
+    </div>
+    <div class="about-story-copy">
+      <p>I am a postdoctoral researcher at <a href='https://www.epfl.ch/en/'>EPFL</a>, within the <a href='https://indy.epfl.ch/'>INDY Lab</a>, working in collaboration with <a href='https://people.epfl.ch/patrick.thiran'>Prof. Patrick Thiran</a>. My research lies at the intersection of experimental design, stochastic modeling, online learning, and derivative-free, uncertainty-aware optimization. Broadly speaking, I am interested in developing adaptive algorithms that efficiently acquire information and make decisions in uncertain, complex, and evolving environments. This work spans both fundamental questions (such as statistical efficiency, exploration strategies, and performance guarantees) and applications to real-world problems, mostly in wireless networks, embedded systems, and network science.</p>
 
-<b>I am on the job market! If interested, feel free to drop me an e-mail!</b>
+      <p>Prior to joining EPFL, I obtained my Ph.D. from <a href='https://www.ens-lyon.fr/'>École Normale Supérieure (ENS) Lyon</a>, where I was a member of the <a href='https://www.ens-lyon.fr/LIP/index.php/research/hownet-team'>HoWNet team</a> under the supervision of <a href='https://perso.ens-lyon.fr/thomas.begin/'>Prof. Thomas Begin</a>. My doctoral research focused on high-dimensional black-box decision-making and online learning methods, with a particular emphasis on the autonomous management of next-generation wireless networks (particularly Wi-Fi and 5G networks). Through this work, I developed scalable approaches capable of operating under severe uncertainty while continuously adapting to changing conditions.</p>
+
+      <p>More generally, my research is motivated by a simple question: how can intelligent systems learn efficiently from limited observations and improve their decisions over time? Answering this question requires combining ideas from machine learning, statistics, and optimization, while maintaining a strong connection to practical challenges in modern complex systems.</p>
+
+      <p><strong>I am on the job market! If interested, feel free to drop me an e-mail!</strong></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('pageshow', function (event) {
+    if (event.persisted) {
+      document.querySelectorAll('video').forEach(function (video) {
+        video.load();
+      });
+    }
+  });
+</script>
