@@ -22,8 +22,13 @@ social: true  # includes social icons at the bottom of the page
     <h3>Built for real systems</h3>
     <p>Optimization is most impactful when it leaves the benchmark and meets the real world. My research develops algorithms for complex, distributed, and resource-constrained systems, with applications ranging from wireless networks to autonomous aerial robotics.</p>
     <video controls preload="metadata" playsinline>
-      <source src="/assets/vid/drone_gp.mp4" type="video/mp4">
+      <source src="/assets/vid/launch_drone.mp4" type="video/mp4">
     </video>
+    <p class="legend"><small><b>Description:</b> An EasyGlider 4 is launched by hand from a field in Switzerland. Shot by my co-authors (Simon Jeger, Marin Philippe 👋) during our first outdoor flight aiming at testing our optimization algorithm for autonomous soaring.</small></p>
+    <video controls preload="metadata" playsinline>
+      <source src="/assets/vid/reroute_gp.mp4" type="video/mp4">
+    </video>
+    <p class="legend"><small><b>Description:</b> While flying, the drone continuously observe its environment. Using a world model that combines prior domain knowledge with online learning, it dynamically replan its route towards the mission goal and favours trajectories that go through high-energy (red) areas.</small></p>
   </div>
   <div class="about-right">
     <div class="about-card">
@@ -32,6 +37,7 @@ social: true  # includes social icons at the bottom of the page
       <video controls preload="metadata" playsinline>
         <source src="/assets/vid/rotation_invariant_gp.mp4" type="video/mp4">
       </video>
+      <p class="legend"><small><b>Description:</b> Incorporating the objective symmetry directly into the model significantly improves both the GP regression and the sample efficiency of the optimization algorithm.</small></p>
       <!-- <div class="card-gallery">
         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Optimization landscape" class="gallery-img">
         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop" alt="Network topology" class="gallery-img">
@@ -43,6 +49,7 @@ social: true  # includes social icons at the bottom of the page
       <video controls preload="metadata" playsinline>
         <source src="/assets/vid/PermSix-Hump_Camel_25.0_240.mp4" type="video/mp4">
       </video>
+      <p class="legend"><small><b>Description:</b> GP surrogate able to identify and remove stale observations from its own dataset, while still managing to track the maximal argument of the objective.</small></p>
       <!-- <div class="card-gallery">
         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=200&fit=crop" alt="Real-time adaptation" class="gallery-img">
         <img src="https://images.unsplash.com/photo-1518611505868-d7f6b3b2c5b4?w=300&h=200&fit=crop" alt="Performance metrics" class="gallery-img">
@@ -52,6 +59,7 @@ social: true  # includes social icons at the bottom of the page
 </div>
 
 <div class="about-body">
+  <h2>about</h2>
   <div class="about-story">
     <div class="about-story-image">
       <img src="/assets/img/prof_pic.jpg" alt="Antoine Bardou">

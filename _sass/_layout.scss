@@ -123,7 +123,7 @@ html[data-theme='dark'] .about-hero-subtitle {
 }
 
 .hero-dynamics {
-  background: linear-gradient(90deg, #2f44d3, #25d4ff, #2f44d3);
+  background: linear-gradient(90deg, #2f44d3, #25d4ff 75%, #2f44d3);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -176,7 +176,7 @@ html[data-theme='dark'] .about-hero-subtitle {
   display: flex;
   flex-direction: column;
   border-radius: 18px;
-  padding: 1.25rem;
+  padding: 0.8rem;
   background: rgba(255, 255, 255, 0);
 }
 
@@ -206,6 +206,12 @@ html[data-theme='dark'] .about-hero-subtitle {
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(33, 42, 61, 0.92);
+}
+
+.about-card p.legend {
+  width: 95%;
+  margin: 0.5rem auto 1.5rem;
+  line-height: 1.4;
 }
 
 html[data-theme='dark'] .about-card p {
