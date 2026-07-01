@@ -218,17 +218,25 @@ html[data-theme='dark'] .about-card p {
   color: rgba(229, 235, 248, 0.82);
 }
 
+.about-card .video-frame {
+  width: 100%;
+  margin-bottom: 0.9rem;
+  border-radius: 14px;
+  overflow: hidden;
+  background: transparent;
+  aspect-ratio: 16 / 9;
+}
+
+.about-card-featured .video-frame {
+  min-height: 380px;
+}
+
 .about-card video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  min-height: 320px;
-  border-radius: 14px;
-  background: #000;
-}
-
-.about-card-featured video {
-  min-height: 380px;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
 }
 
 .card-gallery {

@@ -1,6 +1,7 @@
 ---
 layout: about
-title: about
+title: Anthony Bardou
+description: Anthony Bardou is a postdoctoral researcher at EPFL working on adaptive algorithms, online learning, and uncertainty-aware optimization for complex real-world systems.
 permalink: /
 subtitle: Postdoctoral Researcher @ <a href='https://www.epfl.ch/en/'>EPFL</a>, <a href='https://indy.epfl.ch/'>INDY Lab</a>.
 
@@ -21,22 +22,28 @@ social: true  # includes social icons at the bottom of the page
   <div class="about-card about-card-featured">
     <h3>Built for real systems</h3>
     <p>Optimization is most impactful when it leaves the benchmark and meets the real world. My research develops algorithms for complex, distributed, and resource-constrained systems, with applications ranging from wireless networks to autonomous aerial robotics.</p>
-    <video controls preload="metadata" playsinline>
-      <source src="/assets/vid/launch_drone.mp4" type="video/mp4">
-    </video>
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline>
+        <source src="/assets/vid/launch_drone.mp4" type="video/mp4">
+      </video>
+    </div>
     <p class="legend"><small><b>Description:</b> An EasyGlider 4 is launched by hand from a field in Switzerland. Shot by my co-authors (Simon Jeger, Marin Philippe 👋) during our first outdoor flight aiming at testing our optimization algorithm for autonomous soaring.</small></p>
-    <video controls preload="metadata" playsinline>
-      <source src="/assets/vid/reroute_gp.mp4" type="video/mp4">
-    </video>
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline>
+        <source src="/assets/vid/reroute_gp.mp4" type="video/mp4">
+      </video>
+    </div>
     <p class="legend"><small><b>Description:</b> While flying, the drone continuously observe its environment. Using a world model that combines prior domain knowledge with online learning, it dynamically replan its route towards the mission goal and favours trajectories that go through high-energy (red) areas.</small></p>
   </div>
   <div class="about-right">
     <div class="about-card">
       <h3>Gray-Box Optimization</h3>
       <p>Real-world problems are rarely unstructured. By incorporating symmetries, invariances, and domain knowledge into versatile optimization frameworks, I develop algorithms that learn more efficiently.</p>
-      <video controls preload="metadata" playsinline>
-        <source src="/assets/vid/rotation_invariant_gp.mp4" type="video/mp4">
-      </video>
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline>
+          <source src="/assets/vid/rotation_invariant_gp.mp4" type="video/mp4">
+        </video>
+      </div>
       <p class="legend"><small><b>Description:</b> Incorporating the objective symmetry directly into the model significantly improves both the GP regression and the sample efficiency of the optimization algorithm.</small></p>
       <!-- <div class="card-gallery">
         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Optimization landscape" class="gallery-img">
@@ -46,9 +53,11 @@ social: true  # includes social icons at the bottom of the page
     <div class="about-card">
       <h3>Adapting to Change</h3>
       <p>Many optimization problems evolve over time, requiring algorithms that can continuously adapt as objectives and environments change. I develop optimization methods that remain sample-efficient and reliable in dynamic settings.</p>
-      <video controls preload="metadata" playsinline>
-        <source src="/assets/vid/PermSix-Hump_Camel_25.0_240.mp4" type="video/mp4">
-      </video>
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline>
+          <source src="/assets/vid/PermSix-Hump_Camel_25.0_240.mp4" type="video/mp4">
+        </video>
+      </div>
       <p class="legend"><small><b>Description:</b> GP surrogate able to identify and remove stale observations from its own dataset, while still managing to track the maximal argument of the objective.</small></p>
       <!-- <div class="card-gallery">
         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=200&fit=crop" alt="Real-time adaptation" class="gallery-img">
@@ -77,6 +86,28 @@ social: true  # includes social icons at the bottom of the page
 </div>
 
 <script>
+  function syncVideoFrames() {
+    document.querySelectorAll('.video-frame').forEach(function (frame) {
+      const video = frame.querySelector('video');
+      if (!video) return;
+
+      const ratio = video.videoWidth && video.videoHeight
+        ? video.videoWidth / video.videoHeight
+        : 16 / 9;
+
+      frame.style.aspectRatio = ratio.toString();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.video-frame video').forEach(function (video) {
+      video.addEventListener('loadedmetadata', syncVideoFrames);
+      video.addEventListener('loadeddata', syncVideoFrames);
+      video.addEventListener('canplay', syncVideoFrames);
+    });
+    syncVideoFrames();
+  });
+
   window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
       document.querySelectorAll('video').forEach(function (video) {
