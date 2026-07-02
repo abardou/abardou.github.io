@@ -225,6 +225,7 @@ html[data-theme='dark'] .about-card p {
   overflow: hidden;
   background: transparent;
   aspect-ratio: 16 / 9;
+  max-width: 100%;
 }
 
 .about-card-featured .video-frame {
@@ -237,6 +238,18 @@ html[data-theme='dark'] .about-card p {
   height: 100%;
   object-fit: contain;
   background: transparent;
+}
+
+@media (max-width: 1180px) {
+  .about-card-featured .video-frame {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-card-featured .video-frame {
+    min-height: auto;
+  }
 }
 
 .card-gallery {
