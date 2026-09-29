@@ -3,6 +3,20 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{gonon2026measuring,
+  abbr            = {NeurIPS},
+  workshop        = {BeNTo Workshop},
+  bibtex_show     = {true},
+  author          = {Gonon, Antoine and M{\"u}ller, Adrian and Zheng, L{\'e}on and Lalanne, Cl{\'e}ment and Shen, Zebang and Hsieh, Ya-Ping and Bardou, Anthony and Boumal, Nicolas},
+  booktitle       = {NeurIPS'26 Workshop on Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation Decoding},
+  title           = {Measuring Progress in Diffusion Language Model Pretraining},
+  year            = {2026},
+  url             = {https://openreview.net/forum?id=WLNBGbEQnV},
+  html            = {https://openreview.net/forum?id=WLNBGbEQnV},
+  code            = {https://github.com/agonon/speedrun-dlm},
+  abstract        = {We propose an empirical protocol for deciding how an early web-pretraining speedrun for diffusion language models (DLMs) should be evaluated. We ask three questions of each evaluation metric: 1) Does it recover known rankings among autoregressive models, whose text likelihood can be evaluated directly? 2) Does it continue to improve during DLM pretraining? And 3), does it rank training recipes robustly with respect to slight threshold adjustments? We apply this protocol to the following metrics: performance in several downstream tasks, generative perplexity and bits per byte, decoded-text validity, repetition and diversity. We do so across seven DLM training recipes: masked and uniform D3PM, masked and uniform SEDD, two DUO variants, and SUBS. In our experiments, downstream performance provides the cleanest target for tracking progress. Generative perplexity and bits per byte often monotonically improve, but every tested autoregressive reference model ranks incorrectly at least one pair from the GPT-2 family, even after entropy matching. Validity, repetition and diversity do not provide a natural stopping target but remain useful safeguards for the DLM samplers. Finally, we release an open-source speedrun built around downstream HellaSwag accuracy, one of the metrics that meets our checks most consistently here.}
+}
+
 @inproceedings{iclr26,
   abbr            = {ICLR},
   bibtex_show     = {true},
