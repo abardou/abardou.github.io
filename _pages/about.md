@@ -33,7 +33,7 @@ social: true  # includes social icons at the bottom of the page
         <source src="/assets/vid/reroute_gp.mp4" type="video/mp4">
       </video>
     </div>
-    <p class="legend"><small><b>Description:</b> While flying, the drone continuously observe its environment. Using a world model that combines prior domain knowledge with online learning, it dynamically replan its route towards the mission goal and favours trajectories that go through high-energy (red) areas.</small></p>
+    <p class="legend"><small><b>Description:</b> While flying, the drone continuously observes its environment. Using a world model that combines prior domain knowledge with online learning, it dynamically replans its route towards the mission goal and favours trajectories that go through high-energy (red) areas.</small></p>
   </div>
   <div class="about-right">
     <div class="about-card">
