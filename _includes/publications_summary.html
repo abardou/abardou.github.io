@@ -1,0 +1,8 @@
+<!-- Key figures computed from _bibliography/papers.bib -->
+<div class="summary-row">
+  <div class="stat"><span class="stat-value">{% bibliography_count -f papers -q !@phdthesis %}</span><span class="stat-label">papers</span></div>
+  <div class="stat"><span class="stat-value">{% bibliography_count -f papers -q @*[core_rank=A*||sjr_quartile=Q1] %}</span><span class="stat-label">in top-tier venues</span></div>
+  <div class="stat"><span class="stat-value">{% bibliography_count -f papers -q !@phdthesis[author^=Bardou] %}</span><span class="stat-label">as first author</span></div>
+  <div class="stat"><span class="stat-value">{% bibliography_count -f papers -q @*[bp||bphd] %}</span><span class="stat-label">awards</span></div>
+</div>
+<p class="summary-note">Top-tier venues: <a href="https://portal.core.edu.au/conf-ranks/">CORE</a> A* conferences and <a href="https://www.scimagojr.com/">SCImago</a> Q1 journals.</p>

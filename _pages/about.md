@@ -71,7 +71,7 @@ social: true  # includes social icons at the bottom of the page
   <h2>about</h2>
   <div class="about-story">
     <div class="about-story-image">
-      <img src="/assets/img/prof_pic.jpg" alt="Antoine Bardou">
+      <img src="/assets/img/prof_pic.jpg" alt="Anthony Bardou">
     </div>
     <div class="about-story-copy">
       <p>I am a postdoctoral researcher at <a href='https://www.epfl.ch/en/'>EPFL</a>, within the <a href='https://indy.epfl.ch/'>INDY Lab</a>, working in collaboration with <a href='https://people.epfl.ch/patrick.thiran'>Prof. Patrick Thiran</a>. My research lies at the intersection of experimental design, stochastic modeling, online learning, and derivative-free, uncertainty-aware optimization. Broadly speaking, I am interested in developing adaptive algorithms that efficiently acquire information and make decisions in uncertain, complex, and evolving environments. This work spans both fundamental questions (such as statistical efficiency, exploration strategies, and performance guarantees) and applications to real-world problems, mostly in wireless networks, embedded systems, and network science.</p>

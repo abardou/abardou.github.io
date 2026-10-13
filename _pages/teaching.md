@@ -6,31 +6,47 @@ description:
 nav: true
 nav_order: 5
 ---
+{%- assign total_hours = 0 -%}
+{%- assign total_courses = 0 -%}
+{%- for inst in site.data.teaching -%}
+  {%- for course in inst.courses -%}
+    {%- assign n_terms = course.terms | size -%}
+    {%- assign course_hours = course.hours | times: n_terms -%}
+    {%- assign total_hours = total_hours | plus: course_hours -%}
+    {%- assign total_courses = total_courses | plus: 1 -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign total_institutions = site.data.teaching | size -%}
 
-### EPFL
-
-#### Fall 2025
-
-* **Stochastic Modeling for Telecommunications**, 30h, Bachelor (3rd Year), Teaching Assistant supervised by Patrick Thiran.
-
-#### Fall 2024
-
-* **Stochastic Modeling for Telecommunications**, 30h, Bachelor (3rd Year), Teaching Assistant supervised by Patrick Thiran.
-
-### École Normale Supérieure de Lyon
-
-#### Spring 2023
-
-* **Preparation to the *agrégation* of Computer Science**, 32h, Master (2nd Year), Teaching Assistant supervised by Pascal Koiran.
-
-### Université Claude Bernard Lyon I
-
-#### Spring 2022
-
-* **Numerical Analysis**, 15h, Bachelor of Computer Science (3rd Year), Teaching Assistant supervised by Saida Bouakaz Brondel.
-* **Optimization**, 15h, Bachelor of Computer Science (3rd Year), Teaching Assistant supervised by Saida Bouakaz Brondel.
-
-#### Fall 2021
-
-* **Basics of Artificial Intelligence**, 12h, Master of Computer Science (1st Year), Teaching Assistant supervised by Marie Lefevre.
-* **Optimization & Operations Research**, 18h, Master of Computer Science (1st Year), Teaching Assistant supervised by Christophe Crespelle.
+<div class="teaching">
+  <div class="summary-row">
+    <div class="stat"><span class="stat-value">{{ total_hours }}</span><span class="stat-label">hours taught</span></div>
+    <div class="stat"><span class="stat-value">{{ total_courses }}</span><span class="stat-label">courses</span></div>
+    <div class="stat"><span class="stat-value">{{ total_institutions }}</span><span class="stat-label">institutions</span></div>
+  </div>
+  {%- for inst in site.data.teaching %}
+  <section class="institution">
+    <div class="institution-header">
+      <h2><a href="{{ inst.url }}">{{ inst.institution }}</a></h2>
+      <span class="location">{{ inst.location }}</span>
+    </div>
+    {%- for course in inst.courses %}
+    {%- assign n_terms = course.terms | size %}
+    <div class="course">
+      <div class="terms">
+        {%- for term in course.terms %}
+        <span class="term">{{ term }}</span>
+        {%- endfor %}
+      </div>
+      <div class="course-body">
+        <div class="course-title">{{ course.title }}</div>
+        <div class="course-meta">{{ course.level }} · {{ course.hours }} h{% if n_terms > 1 %} per term{% endif %} · {{ course.role }}</div>
+        {%- if course.instructor %}
+        <div class="course-meta">Course led by {% if course.instructor_url %}<a href="{{ course.instructor_url }}">{{ course.instructor }}</a>{% else %}{{ course.instructor }}{% endif %}</div>
+        {%- endif %}
+      </div>
+    </div>
+    {%- endfor %}
+  </section>
+  {%- endfor %}
+</div>

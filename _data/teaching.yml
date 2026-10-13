@@ -1,0 +1,55 @@
+# Teaching experience, rendered by _pages/teaching.md.
+# Institutions and courses are listed from most to least recent.
+# `hours` is per term; a course taught several times lists every term in `terms`.
+
+- institution: EPFL
+  url: https://www.epfl.ch/en/
+  location: Lausanne, Switzerland
+  courses:
+    - title: Stochastic Modeling for Telecommunications
+      terms: [Fall 2026, Fall 2025, Fall 2024]
+      level: Bachelor, 3rd year
+      hours: 30
+      role: Teaching assistant
+      instructor: Patrick Thiran
+      instructor_url: https://people.epfl.ch/patrick.thiran
+
+- institution: École Normale Supérieure de Lyon
+  url: https://www.ens-lyon.fr/
+  location: Lyon, France
+  courses:
+    - title: Preparation for the <em>agrégation</em> in Computer Science
+      terms: [Spring 2023]
+      level: Master, 2nd year
+      hours: 32
+      role: Teaching assistant
+      instructor: Pascal Koiran
+
+- institution: Université Claude Bernard Lyon 1
+  url: https://www.univ-lyon1.fr/
+  location: Lyon, France
+  courses:
+    - title: Numerical Analysis
+      terms: [Spring 2022]
+      level: Bachelor in Computer Science, 3rd year
+      hours: 15
+      role: Teaching assistant
+      instructor: Saida Bouakaz Brondel
+    - title: Optimization
+      terms: [Spring 2022]
+      level: Bachelor in Computer Science, 3rd year
+      hours: 15
+      role: Teaching assistant
+      instructor: Saida Bouakaz Brondel
+    - title: Optimization & Operations Research
+      terms: [Fall 2021]
+      level: Master in Computer Science, 1st year
+      hours: 18
+      role: Teaching assistant
+      instructor: Christophe Crespelle
+    - title: Basics of Artificial Intelligence
+      terms: [Fall 2021]
+      level: Master in Computer Science, 1st year
+      hours: 12
+      role: Teaching assistant
+      instructor: Marie Lefevre
