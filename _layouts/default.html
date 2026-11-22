@@ -3,7 +3,9 @@
 
   <!-- Head -->
   <head>
-  {%- if page.redirect -%}
+  {%- if page.redirect == true -%}
+    <meta http-equiv="refresh" content="3; url={{ '/' | relative_url }}" />
+  {%- elsif page.redirect -%}
     <meta http-equiv="refresh" content="0; url={% if page.redirect contains '://' %}{{ page.redirect }}{% else %}{{ page.redirect | relative_url }}{% endif %}" />
   {%- endif -%}
   {% include head.html %}

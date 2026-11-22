@@ -2,16 +2,71 @@
 layout: default
 ---
 <!-- _layouts/post.html -->
-{%- assign year = page.date | date: "%Y" -%}
-{%- assign tags = page.tags | join: "" -%}
-{%- assign categories = page.categories | join: "" -%}
-
 {% if page._styles %}
 <!-- Page/Post style -->
 <style type="text/css">
   {{ page._styles }}
 </style>
 {% endif %}
+
+{%- if page.collection == 'posts' -%}
+{%- comment -%} Docta Ignorantia article (blog posts). {%- endcomment -%}
+{%- assign read_time = content | strip_html | number_of_words | divided_by: 200 | plus: 1 -%}
+
+<article class="di di-article">
+
+  <header class="di-article-header">
+    <a class="di-back" href="{{ '/blog/' | relative_url }}">{% include blog/emblem.html variant="mark" %}{{ site.blog_name }}</a>
+    <h1 class="di-article-title">{{ page.title }}</h1>
+    {%- if page.description %}
+    <p class="di-article-dek">{{ page.description }}</p>
+    {%- endif %}
+    <p class="di-article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      <span class="di-dot" aria-hidden="true"></span>
+      <span>{{ read_time }} min read</span>
+      {%- if page.interactive %}
+      <span class="di-dot" aria-hidden="true"></span>
+      <span class="di-badge">Interactive</span>
+      {%- endif %}
+    </p>
+  </header>
+
+  <div class="di-prose">
+    {{ content }}
+  </div>
+
+  <footer class="di-article-end">
+    {% include blog/emblem.html variant="mark" %}
+    <a class="di-back" href="{{ '/blog/' | relative_url }}">All notes</a>
+  </footer>
+
+  {%- if site.disqus_shortname and page.comments -%}
+    <div id="disqus_thread" style="max-width: {{ site.max_width }}; margin: 0 auto"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = '{{ site.disqus_shortname }}';
+      var disqus_identifier = '{{ page.id }}';
+      var disqus_title      = {{ page.title | jsonify }};
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {%- endif %}
+
+</article>
+
+{%- for script in page.scripts %}
+<script defer src="{{ script | relative_url }}"></script>
+{%- endfor %}
+
+{%- else -%}
+{%- comment -%} Other collections (e.g. news) keep the original al-folio post layout. {%- endcomment -%}
+{%- assign year = page.date | date: "%Y" -%}
+{%- assign tags = page.tags | join: "" -%}
+{%- assign categories = page.categories | join: "" -%}
 
 <div class="post">
 
@@ -43,19 +98,5 @@ layout: default
     {{ content }}
   </article>
 
-  {%- if site.disqus_shortname and page.comments -%}
-    <div id="disqus_thread" style="max-width: {{ site.max_width }}; margin: 0 auto"></div>
-    <script type="text/javascript">
-      var disqus_shortname  = '{{ site.disqus_shortname }}';
-      var disqus_identifier = '{{ page.id }}';
-      var disqus_title      = {{ page.title | jsonify }};
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {%- endif %}
-
 </div>
+{%- endif %}

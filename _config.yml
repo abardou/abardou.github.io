@@ -112,9 +112,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: abardou # blog_name will be displayed in your blog page
-blog_nav_title:  # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Docta Ignorantia # blog_name will be displayed in your blog page
+blog_nav_title: Docta Ignorantia # your blog must have a title for it to be displayed in the nav bar
+blog_description: Interactive notes on learning under uncertainty
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -180,9 +180,7 @@ exclude:
   - docker-compose.yml
   - docker-local.yml
   # al-folio sample content, not published
-  - _posts
   - _projects
-  - blog
   - _pages/projects.md
   - _pages/repositories.md
   - _pages/dropdown.md
@@ -238,7 +236,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+display_tags: [] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
