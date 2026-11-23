@@ -183,6 +183,21 @@
     return off;
   };
 
+  // A w x h grid of values in [0,1] (row-major, NaN = transparent) as an offscreen canvas.
+  DI.heatRect = function (values, w, h, ramp, off) {
+    off = off || document.createElement("canvas");
+    if (off.width !== w || off.height !== h) { off.width = w; off.height = h; }
+    var octx = off.getContext("2d"), img = octx.createImageData(w, h);
+    for (var i = 0; i < w * h; i++) {
+      var v = values[i];
+      if (v !== v) { img.data[4 * i + 3] = 0; continue; }
+      var c = ramp(v);
+      img.data[4 * i] = c[0]; img.data[4 * i + 1] = c[1]; img.data[4 * i + 2] = c[2]; img.data[4 * i + 3] = 255;
+    }
+    octx.putImageData(img, 0, 0);
+    return off;
+  };
+
   // A reusable m x m offscreen canvas: put(values, lut) paints values in [0,1] through a
   // 256-entry colour table (NaN = transparent). Cheap enough to call on every animation frame.
   DI.heatCanvas = function (m) {
@@ -324,6 +339,20 @@
     });
     set(value, true);
     return { set: set, get: function () { return value; }, el: wrap };
+  };
+
+  // A native dropdown, for choices too many or too long for a segmented control.
+  DI.select = function (parent, label, options, value, onchange) {
+    var wrap = DI.el("label", "di-field", parent);
+    DI.el("span", "di-field-label", wrap, label);
+    var sel = DI.el("select", "di-select", wrap);
+    options.forEach(function (o) {
+      var op = DI.el("option", null, sel, o.label);
+      op.value = o.value;
+    });
+    sel.value = value;
+    sel.addEventListener("change", function () { onchange(sel.value); });
+    return { set: function (v) { sel.value = v; }, get: function () { return sel.value; }, el: wrap };
   };
 
   DI.slider = function (parent, label, opts, onchange) {

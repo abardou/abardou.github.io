@@ -1046,3 +1046,88 @@ a.di-back {
 @media (max-width: 600px) {
   .di-scales { gap: 0.6rem; }
 }
+
+.di-select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--di-rule);
+  border-radius: 999px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23858a94' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  color: var(--di-ink);
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  padding: 0.38rem 2rem 0.38rem 0.85rem;
+  cursor: pointer;
+
+  &:focus-visible { outline: 2px solid var(--di-accent); outline-offset: 2px; }
+
+  option { color: #1b1d22; background: #fff; }
+}
+
+// a 2 x 2 grid of small plots
+.di-quad {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem 1.75rem;
+}
+
+@media (max-width: 640px) {
+  .di-quad { grid-template-columns: minmax(0, 1fr); }
+}
+
+.di-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.2rem 0 1.1rem;
+  font-size: 0.84rem;
+  color: var(--di-ink-soft);
+}
+
+.di-svg-ref-curve { stroke-dasharray: 5 4; stroke-width: 1.5; opacity: 0.55; }
+
+// a wide stage beside a narrower column of small plots
+.di-split-wide {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .di-split-wide { grid-template-columns: minmax(0, 1fr); }
+}
+
+.di-stage-wide .di-plot { margin-bottom: 0.4rem; }
+.di-ingredient { margin-bottom: 0.15rem; }
+
+// a dropdown may shrink below its longest option on narrow screens
+.di-field { max-width: 100%; }
+.di-field .di-select { flex: 0 1 auto; min-width: 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+
+// a row of a stacked figure: a title on the left, a live value on the right, a plot below
+.di-lane { margin-top: 1rem; }
+.di-lane-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1rem;
+
+  .di-panel-title { margin-bottom: 0.3rem; }
+}
+.di-lane-value {
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--di-ink-soft);
+}
+
+// math inside uppercase labels and titles keeps its case
+.di-sym {
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--di-serif);
+  font-style: italic;
+  font-size: 1.15em;
+}

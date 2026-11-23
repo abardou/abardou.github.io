@@ -20,18 +20,16 @@ He made his name at the Council of Basel in the 1430s with a treatise on church 
 
 *De docta ignorantia*, usually translated *On Learned Ignorance*, was finished at Kues in 1440. It has three parts: the first on God, the second on the universe, the third on Christ. Its starting point is a claim about knowledge. We come to know something by comparing it with what we already know, through proportion and measure. A finite mind can always grasp the truth more precisely, and never exactly. To know this, and to know it well, is what Cusa calls learned ignorance: the more a person knows that they do not know, he writes, the more learned they are.
 
-As he does throughout the book, he makes the point with geometry. The intellect attempts to grasp the truth as a polygon inscribed in a circle attempts to grasp the circle: the more sides it has, the more it resembles the circle, but no number of sides makes it equal to the circle.[^letter2]
+As he does throughout the book, he makes the point with geometry. The intellect attempts to grasp the truth as a polygon inscribed in a circle attempts to grasp the circle: the more sides it has, the more it resembles the circle, but no finite number of sides makes it equal to the circle[^letter2] since, for a regular polygon with $$n$$ sides, the covered fraction of the disc is
+
+$$
+\frac{A_n}{A_\circ} \;=\; \frac{n}{2\pi}\,\sin\frac{2\pi}{n}.
+$$
 
 <figure class="di-widget di-wide" data-di-widget="polygon" data-n="6">
   <noscript><p class="di-caption">This figure is interactive and needs JavaScript.</p></noscript>
   <figcaption>Cusa's polygon (Book I, chapter 3). Drag the slider to change the number of sides; the plot shows the fraction of the disc left uncovered.</figcaption>
 </figure>
-
-Note that, for a regular polygon with $$n$$ sides, the covered fraction of the disc is
-
-$$
-\frac{A_n}{A_\circ} \;=\; \frac{n}{2\pi}\,\sin\frac{2\pi}{n}.
-$$
 
 The same habit of thought runs through the rest of the book. As a circle grows without bound, its circumference becomes indistinguishable from a straight line, and in the infinite, Cusa argues, opposites such as the curved and the straight, or the maximum and the minimum, coincide. The second book draws a startling conclusion for 1440: the universe has neither a fixed center nor a fixed boundary, and the Earth is neither its center nor at rest. It is a philosophical argument, not an astronomical model, but it came a century before Copernicus.
 

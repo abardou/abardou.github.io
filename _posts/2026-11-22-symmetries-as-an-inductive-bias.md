@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symmetries as an inductive bias
+title: Symmetries as an inductive bias for a Bayesian optimizer
 description: When a function has symmetries, every observation yields information about multiple locations in the search space. How to tell a Bayesian optimizer about it?
 date: 2026-11-22 01:30:00+0100
 interactive: true
