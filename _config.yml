@@ -61,6 +61,7 @@ max_width: 800px
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: /assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
+blog_og_image: /assets/img/docta-ignorantia-og.png # Preview image for the blog index and posts (the Docta Ignorantia emblem)
 
 # -----------------------------------------------------------------------------
 # Social integration
